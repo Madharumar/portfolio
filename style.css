@@ -1,0 +1,470 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body{
+        background-color: black;
+        
+    }
+    header nav{
+        width: 99vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position:sticky;
+        top:10px;
+
+    }
+    header nav .logo {
+        width: 50%;
+        color: white;
+    }
+    header nav .logo a{
+        text-decoration: none;
+        color: cyan;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 20px;
+        /* text-shadow: 2px 2px 2px 5px; */
+        
+        
+    }
+
+    header nav .icons a{
+        position: relative;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+
+    }
+    header nav .icons a::after{
+        content:'';
+        height: 4px;
+        width:0%;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: cyan;
+        transition: all 0.75s  linear;
+        border-radius: 10px;
+        
+
+    }
+    header  nav .icons a:hover:after{
+        color: cyan;
+        
+        width:100%;
+    }
+
+    header nav .icons{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    header nav .icons  a{
+        text-decoration: none;
+        color: white;
+    }
+    .container{
+        background-color: black;
+        height: 100vh;
+        width: 99vw;
+        color: white;
+        display: flex;
+    }
+    .container .container1{
+        width: 50%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container1 .content{
+    margin-left: 80px;
+    }
+
+    .container .container1 .content h1{
+        font-size:52px;
+    }
+    .container .container1 .content h2{
+        font-size: 36px;
+        color: cyan;
+    }
+    .content p{
+        font-size: 16px;
+        letter-spacing: 0.75px;
+        margin-top: 10px;
+        width:80%;
+        text-shadow: 0px 0px 3px 2px whitesmoke;
+    }
+    .icon{
+    
+        text-decoration: none;
+        display: flex;
+        height: 10vh;
+        
+    }
+    .icon div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        /* padding: 5px; */
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-size: 36px;
+        margin-top: 15px;
+        margin-right: 20px;
+        border: 2px solid cyan;
+
+    }
+    .icon div a{
+    color: cyan;
+    margin-bottom: 4px;
+
+    }
+
+    .container2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2 img{
+        height:510px;
+        width:325px;
+        z-index: 1;
+        position: relative;
+        left:200px;
+        top: -10px;
+    }
+    .container2 .blob{
+        height:380px;
+        width: 380px;
+        border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;
+        background-color: cyan;
+        z-index: 0;
+        position: relative;
+        right:120px;
+    
+    }
+    .container2 .blob:hover{
+        border-radius: 40% 55% 65% 60% / 40% 70% 65% 35%; 
+        transition: all 3s;
+
+    }
+    .btn{
+        text-align: left;
+        margin-top: 30px;
+    }
+    .btn button{
+        width: 150px;
+        height:40px;
+        padding: 2px;
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-right: 20px;
+        transition: all 1s;
+    }
+    .btn .bt1{
+        background-color: cyan;
+    }
+    /* .btn .bt1:hover{
+        scale: 1.02;
+        box-shadow: 0 0 2px 1px cyan;
+        font-size: 12px;
+        background-color: white;
+
+    .btn .bt2:hover{
+        /* scale: 1.02; */
+        /* box-shadow: 0 0 2px 1px white; 
+        font-size: 12px;
+        background-color: cyan
+        ;
+    } */
+
+    /* this portion is for first 100vh which includes nav image blob button etc */
+    .title1{
+        width: 99vw;
+        height:25vh;
+    }
+    .title1 h1{
+        color: cyan;
+        text-align: center;
+        font-size:56px ;
+        height: 100%;
+    }
+    .title1 h1 span{
+        color: white;
+    }
+    .details :nth-child(2){
+        color: cyan;
+    }
+
+
+    .details{
+        width:99vw;
+        height:90vh;
+        display: flex;
+
+    }
+    .detail1{
+        width:39vw;
+        height:70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .detail2{
+        width:59vw;
+        height:90vh;
+        
+    }
+    .detail2 .information{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        letter-spacing: 2px;
+
+    }
+    .detail1 img{
+        height: 100%;
+        width: 51%;
+        border-radius:10px;
+    }
+
+    .info{
+        color: white;
+        height:10vh;
+    }
+    .info h3{
+        text-align: left;
+        font-size: 28px;
+        height: 20vh;
+        /* margin-left: 80px; */
+    }
+    .info h3 span{
+        color: cyan;
+    }
+    .information div div{
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* width: 50%; */
+    }
+    .information div div p{
+        width: 100%;
+        font-weight: 600;
+    }
+    .information div div p span{
+
+        color: white;
+        /* margin-right: 10px; */
+        font-size: 36px;
+        margin-top: 10px;
+
+    }
+    /* .information div div p span::after{
+        content: " -";
+    } */
+
+
+
+
+    
+
+    .title2{
+        width: 99vw;
+        height:120vh;
+    }
+    .title2 div h1{
+        color: cyan;
+        text-align: center;
+        font-size:56px ;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+    .title2 div h1 span{
+        color: white;
+    }
+    .title2 .education{
+        width:99vw;
+        height:100vh;
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+    }
+
+    .education div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        /* margin-right: 15px; */
+    }
+    .education div div{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 30px
+    }
+    .education div :first-child{
+        width: 39vw;
+        display: flex;
+        
+    }
+    .education div :first-child img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .education div :last-child {
+        width: 59vw;    
+    }
+    education div :last-child h2{
+        color: cyan;  
+    }
+
+
+
+    .skill{
+        height: 70vh;
+        width: 99vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        font-size: 36px;
+        color: cyan;
+        margin-bottom: 30px;
+    }
+    .title h1 span i{
+        color: white;
+        font-size: 56px;
+        
+    }
+    .skills{
+        width: 90%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }   
+    .skills img{
+        width: 150px;
+        height: 150px;
+        transition: all 1s;
+    }
+
+    .skills img:hover{
+        scale: 1.075;
+    }
+
+    .contactus{
+        width: 99vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contacttitle{
+        height: 10vh;
+    }
+    .contacttitle h1{
+        color: cyan;
+        font-size: 48px;
+    }
+    .contacttitle h1 span i{
+        color: white;
+        margin-right: 10px;
+    }
+
+    .contactform{
+        margin-top: 50px;
+        width: 50%;
+        height:70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contactform form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        background: linear-gradient(to right, #001f1f, cyan);
+        border-radius: 20px;
+    }
+    .contactform form input, .contactform form textarea{
+        width: 80%;
+        padding: 8px;
+        border-radius: 10px;
+        border: 2px solid cyan;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: black;
+        color:cyan
+    }
+
+    .contactform form button{
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        background-color: cyan;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+
+
+
+    @media only screen and (min-width:750px)and(max-width:900px) {
+
+
+
+
+
+        
+    }
+
+    @media only screen and (min-width:475px)and(max-width:600px) {
+
+
+
+
+
+        
+    }
+    @media only screen and (min-width:320px)and(max-width:475px) {
+
+
+
+
+
+        
+    }
+
+        
