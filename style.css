@@ -1,114 +1,128 @@
-    *{
+    * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    body{
+
+    body {
         background-color: black;
-        
+
     }
-    header nav{
+
+    header nav {
         width: 99vw;
         height: 8vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        position:sticky;
-        top:10px;
+        position: sticky;
+        top: 10px;
 
     }
+
     header nav .logo {
         width: 50%;
         color: white;
     }
-    header nav .logo a{
+
+    header nav .logo a {
         text-decoration: none;
         color: cyan;
         font-size: 18px;
         font-weight: 600;
         margin-left: 20px;
         /* text-shadow: 2px 2px 2px 5px; */
-        
-        
+
+
     }
 
-    header nav .icons a{
+    header nav .icons a {
         position: relative;
         font-weight: 600;
         letter-spacing: 0.5px;
 
     }
-    header nav .icons a::after{
-        content:'';
+
+    header nav .icons a::after {
+        content: '';
         height: 4px;
-        width:0%;
+        width: 0%;
         position: absolute;
         left: 0;
         bottom: -5px;
         background-color: cyan;
-        transition: all 0.75s  linear;
+        transition: all 0.75s linear;
         border-radius: 10px;
-        
+
 
     }
-    header  nav .icons a:hover:after{
+
+    header nav .icons a:hover:after {
         color: cyan;
-        
-        width:100%;
+
+        width: 100%;
     }
 
-    header nav .icons{
+    header nav .icons {
         width: 50%;
         display: flex;
         justify-content: space-evenly;
     }
-    header nav .icons  a{
+
+    header nav .icons a {
         text-decoration: none;
         color: white;
     }
-    .container{
+
+    .container {
         background-color: black;
         height: 100vh;
         width: 99vw;
         color: white;
         display: flex;
     }
-    .container .container1{
+
+    .container .container1 {
         width: 50%;
-        height:100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-    }
-    .container1 .content{
-    margin-left: 80px;
+
     }
 
-    .container .container1 .content h1{
-        font-size:52px;
+    .container1 .content {
+        margin-left: 80px;
     }
-    .container .container1 .content h2{
+
+    .container .container1 .content h1 {
+        font-size: 52px;
+    }
+
+    .container .container1 .content h2 {
         font-size: 36px;
         color: cyan;
     }
-    .content p{
+
+    .content p {
         font-size: 16px;
         letter-spacing: 0.75px;
         margin-top: 10px;
-        width:80%;
+        width: 80%;
         text-shadow: 0px 0px 3px 2px whitesmoke;
     }
-    .icon{
-    
+
+    .icon {
+
         text-decoration: none;
         display: flex;
         height: 10vh;
-        
+
     }
-    .icon div{
+
+    .icon div {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -123,49 +137,55 @@
         border: 2px solid cyan;
 
     }
-    .icon div a{
-    color: cyan;
-    margin-bottom: 4px;
+
+    .icon div a {
+        color: cyan;
+        margin-bottom: 4px;
 
     }
 
-    .container2{
+    .container2 {
         width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .container2 img{
-        height:510px;
-        width:325px;
+
+    .container2 img {
+        height: 510px;
+        width: 325px;
         z-index: 1;
         position: relative;
-        left:200px;
+        left: 200px;
         top: -10px;
     }
-    .container2 .blob{
-        height:380px;
+
+    .container2 .blob {
+        height: 380px;
         width: 380px;
         border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;
         background-color: cyan;
         z-index: 0;
         position: relative;
-        right:120px;
-    
+        right: 120px;
+
     }
-    .container2 .blob:hover{
-        border-radius: 40% 55% 65% 60% / 40% 70% 65% 35%; 
+
+    .container2 .blob:hover {
+        border-radius: 40% 55% 65% 60% / 40% 70% 65% 35%;
         transition: all 3s;
 
     }
-    .btn{
+
+    .btn {
         text-align: left;
         margin-top: 30px;
     }
-    .btn button{
+
+    .btn button {
         width: 150px;
-        height:40px;
+        height: 40px;
         padding: 2px;
         border: none;
         font-weight: bold;
@@ -173,9 +193,11 @@
         margin-right: 20px;
         transition: all 1s;
     }
-    .btn .bt1{
+
+    .btn .bt1 {
         background-color: cyan;
     }
+
     /* .btn .bt1:hover{
         scale: 1.02;
         box-shadow: 0 0 2px 1px cyan;
@@ -184,50 +206,56 @@
 
     .btn .bt2:hover{
         /* scale: 1.02; */
-        /* box-shadow: 0 0 2px 1px white; 
+    /* box-shadow: 0 0 2px 1px white; 
         font-size: 12px;
         background-color: cyan
         ;
     } */
 
     /* this portion is for first 100vh which includes nav image blob button etc */
-    .title1{
+    .title1 {
         width: 99vw;
-        height:25vh;
+        height: 25vh;
     }
-    .title1 h1{
+
+    .title1 h1 {
         color: cyan;
         text-align: center;
-        font-size:56px ;
+        font-size: 56px;
         height: 100%;
     }
-    .title1 h1 span{
+
+    .title1 h1 span {
         color: white;
     }
-    .details :nth-child(2){
+
+    .details :nth-child(2) {
         color: cyan;
     }
 
 
-    .details{
-        width:99vw;
-        height:90vh;
+    .details {
+        width: 99vw;
+        height: 90vh;
         display: flex;
 
     }
-    .detail1{
-        width:39vw;
-        height:70vh;
+
+    .detail1 {
+        width: 39vw;
+        height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .detail2{
-        width:59vw;
-        height:90vh;
-        
+
+    .detail2 {
+        width: 59vw;
+        height: 90vh;
+
     }
-    .detail2 .information{
+
+    .detail2 .information {
         width: 100%;
         height: 100%;
         display: flex;
@@ -236,37 +264,43 @@
         letter-spacing: 2px;
 
     }
-    .detail1 img{
+
+    .detail1 img {
         height: 100%;
         width: 51%;
-        border-radius:10px;
+        border-radius: 10px;
     }
 
-    .info{
+    .info {
         color: white;
-        height:10vh;
+        height: 10vh;
     }
-    .info h3{
+
+    .info h3 {
         text-align: left;
         font-size: 28px;
         height: 20vh;
         /* margin-left: 80px; */
     }
-    .info h3 span{
+
+    .info h3 span {
         color: cyan;
     }
-    .information div div{
+
+    .information div div {
         height: 20%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         /* width: 50%; */
     }
-    .information div div p{
+
+    .information div div p {
         width: 100%;
         font-weight: 600;
     }
-    .information div div p span{
+
+    .information div div p span {
 
         color: white;
         /* margin-right: 10px; */
@@ -274,6 +308,7 @@
         margin-top: 10px;
 
     }
+
     /* .information div div p span::after{
         content: " -";
     } */
@@ -281,25 +316,28 @@
 
 
 
-    
 
-    .title2{
+
+    .title2 {
         width: 99vw;
-        height:120vh;
+        height: 120vh;
     }
-    .title2 div h1{
+
+    .title2 div h1 {
         color: cyan;
         text-align: center;
-        font-size:56px ;
+        font-size: 56px;
         height: 100%;
         margin-bottom: 30px;
     }
-    .title2 div h1 span{
+
+    .title2 div h1 span {
         color: white;
     }
-    .title2 .education{
-        width:99vw;
-        height:100vh;
+
+    .title2 .education {
+        width: 99vw;
+        height: 100vh;
         display: grid;
         justify-content: space-around;
         align-items: center;
@@ -313,33 +351,37 @@
         justify-content: center;
         /* margin-right: 15px; */
     }
-    .education div div{
+
+    .education div div {
         display: grid;
         justify-content: center;
         align-items: center;
         margin-top: 15px;
         margin-bottom: 30px
     }
-    .education div :first-child{
+
+    .education div :first-child {
         width: 39vw;
         display: flex;
-        
+
     }
-    .education div :first-child img{
+
+    .education div :first-child img {
         width: 150px;
         height: 150px;
     }
 
     .education div :last-child {
-        width: 59vw;    
-    }
-    education div :last-child h2{
-        color: cyan;  
+        width: 59vw;
     }
 
+    education div :last-child h2 {
+        color: cyan;
+    }
 
 
-    .skill{
+
+    .skill {
         height: 70vh;
         width: 99vw;
         display: flex;
@@ -347,35 +389,39 @@
         justify-content: center;
         align-items: center;
     }
-    .title{
+
+    .title {
         font-size: 36px;
         color: cyan;
         margin-bottom: 30px;
     }
-    .title h1 span i{
+
+    .title h1 span i {
         color: white;
         font-size: 56px;
-        
+
     }
-    .skills{
+
+    .skills {
         width: 90%;
         height: 50vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
-    }   
-    .skills img{
+
+    }
+
+    .skills img {
         width: 150px;
         height: 150px;
         transition: all 1s;
     }
 
-    .skills img:hover{
+    .skills img:hover {
         scale: 1.075;
     }
 
-    .contactus{
+    .contactus {
         width: 99vw;
         height: 100vh;
         display: flex;
@@ -383,28 +429,32 @@
         align-items: center;
         flex-direction: column;
     }
-    .contacttitle{
+
+    .contacttitle {
         height: 10vh;
     }
-    .contacttitle h1{
+
+    .contacttitle h1 {
         color: cyan;
         font-size: 48px;
     }
-    .contacttitle h1 span i{
+
+    .contacttitle h1 span i {
         color: white;
         margin-right: 10px;
     }
 
-    .contactform{
+    .contactform {
         margin-top: 50px;
         width: 50%;
-        height:70vh;
+        height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
-    .contactform form{
+
+    .contactform form {
         width: 100%;
         height: 100%;
         display: flex;
@@ -415,7 +465,9 @@
         background: linear-gradient(to right, #001f1f, cyan);
         border-radius: 20px;
     }
-    .contactform form input, .contactform form textarea{
+
+    .contactform form input,
+    .contactform form textarea {
         width: 80%;
         padding: 8px;
         border-radius: 10px;
@@ -423,10 +475,10 @@
         font-size: 14px;
         font-weight: 600;
         background-color: black;
-        color:cyan
+        color: cyan
     }
 
-    .contactform form button{
+    .contactform form button {
         width: 150px;
         height: 40px;
         border: none;
@@ -442,116 +494,130 @@
 
 
     @media (max-width:1200px) {
-         .container{
-        background-color: black;
-        height: 55vh;
-        width: 99vw;
-        color: white;
-        display: flex;
-    }
-    .container .container1{
-        width: 50%;
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .container1 .content{
-    margin-left: 50px;
-    }
+        .container {
+            background-color: black;
+            height: 55vh;
+            width: 99vw;
+            color: white;
+            display: flex;
+        }
 
-    .container .container1 .content h1{
-        font-size:48px;
-    }
-    .container .container1 .content h2{
-        font-size: 28px;
-        color: cyan;
-    }
-    .content p{
-        font-size: 14px;
-        letter-spacing: 0.75px;
-        margin-top: 10px;
-        width:80%;
-        text-shadow: 0px 0px 3px 2px whitesmoke;
-    }
-    .icon{
-    
-        text-decoration: none;
-        display: flex;
-        height: 8vh;
-        
-    }
-    .icon div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        /* padding: 5px; */
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        font-size: 36px;
-        margin-top: 15px;
-        margin-right: 20px;
-        border: 2px solid cyan;
+        .container .container1 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-    }
-    .icon div a{
-    color: cyan;
-    margin-bottom: 4px;
+        }
 
-    }
+        .container1 .content {
+            margin-left: 50px;
+        }
 
-    .container2{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .container2 img{
-        height:480px;
-        width:300px;
-        z-index: 1;
-        position: relative;
-        left:150px;
-        top: -10px;
-    }
-    .container2 .blob{
-        height:380px;
-        width: 380px;
-        border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;
-        background-color: cyan;
-        z-index: 0;
-        position: relative;
-        right:140px;
-    
-    }
-    .container2 .blob:hover{
-        border-radius: 40% 55% 65% 60% / 40% 70% 65% 35%; 
-        transition: all 3s;
+        .container .container1 .content h1 {
+            font-size: 48px;
+        }
 
-    }
-    .btn{
-        text-align: left;
-        margin-top: 20px;
-    }
-    .btn button{
-        width: 150px;
-        height:40px;
-        padding: 2px;
-        border: none;
-        font-weight: bold;
-        border-radius: 10px;
-        margin-right: 20px;
-        transition: all 1s;
-    }
-    .btn .bt1{
-        background-color: cyan;
-    }
-    /* .btn .bt1:hover{
+        .container .container1 .content h2 {
+            font-size: 28px;
+            color: cyan;
+        }
+
+        .content p {
+            font-size: 14px;
+            letter-spacing: 0.75px;
+            margin-top: 10px;
+            width: 80%;
+            text-shadow: 0px 0px 3px 2px whitesmoke;
+        }
+
+        .icon {
+
+            text-decoration: none;
+            display: flex;
+            height: 8vh;
+
+        }
+
+        .icon div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            /* padding: 5px; */
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            font-size: 36px;
+            margin-top: 15px;
+            margin-right: 20px;
+            border: 2px solid cyan;
+
+        }
+
+        .icon div a {
+            color: cyan;
+            margin-bottom: 4px;
+
+        }
+
+        .container2 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container2 img {
+            height: 480px;
+            width: 300px;
+            z-index: 1;
+            position: relative;
+            left: 150px;
+            top: -10px;
+        }
+
+        .container2 .blob {
+            height: 380px;
+            width: 380px;
+            border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;
+            background-color: cyan;
+            z-index: 0;
+            position: relative;
+            right: 140px;
+
+        }
+
+        .container2 .blob:hover {
+            border-radius: 40% 55% 65% 60% / 40% 70% 65% 35%;
+            transition: all 3s;
+
+        }
+
+        .btn {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .btn button {
+            width: 150px;
+            height: 40px;
+            padding: 2px;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: all 1s;
+        }
+
+        .btn .bt1 {
+            background-color: cyan;
+        }
+
+        /* .btn .bt1:hover{
         scale: 1.02;
         box-shadow: 0 0 2px 1px cyan;
         font-size: 12px;
@@ -565,368 +631,413 @@
         ;
     } */
 
-    /* this portion is for first 100vh which includes nav image blob button etc */
-    .title1{
-        width: 99vw;
-        height:15vh;
-    }
-    .title1 h1{
-        color: cyan;
-        text-align: center;
-        font-size:48px ;
-        height: 100%;
-    }
-    .title1 h1 span{
-        color: white;
-    }
-        .details :nth-child(2){
-        color: cyan;
-    }
+        /* this portion is for first 100vh which includes nav image blob button etc */
+        .title1 {
+            width: 99vw;
+            height: 15vh;
+        }
+
+        .title1 h1 {
+            color: cyan;
+            text-align: center;
+            font-size: 48px;
+            height: 100%;
+        }
+
+        .title1 h1 span {
+            color: white;
+        }
+
+        .details :nth-child(2) {
+            color: cyan;
+        }
 
 
-    .details{
-        width:99vw;
-        height:60vh;
-        display: flex;
+        .details {
+            width: 99vw;
+            height: 60vh;
+            display: flex;
 
-    }
-    .detail1{
-        width:39vw;
-        height:60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .detail2{
-        width:59vw;
-        height:60vh;
-        
-    }
-    .detail2 .information{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;;
-        font-size: 16px;
-        letter-spacing: 2px;
+        }
 
-    }
-    .detail1 img{
-        height: 65%;
-        width: 55%;
-        border-radius:10px;
-    }
+        .detail1 {
+            width: 39vw;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .info{
-        color: white;
-        height:10vh;
-    }
-    .info h3{
-        text-align: left;
-        font-size: 28px;
-        height: 15vh;
-        /* margin-left: 80px; */
-    }
-    .info h3 span{
-        color: cyan;
-    }
-    .information div div{
-        height: 20%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        /* width: 50%; */
-    }
-    .information div div p{
-        width: 100%;
-        font-weight: 600;
-    }
-    .information div div p span{
+        .detail2 {
+            width: 59vw;
+            height: 60vh;
 
-        color: white;
-        /* margin-right: 10px; */
-        font-size: 28px;
-        margin-top: 10px;
+        }
 
-    }
-    /* .information div div p span::after{
+        .detail2 .information {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            ;
+            font-size: 16px;
+            letter-spacing: 2px;
+
+        }
+
+        .detail1 img {
+            height: 65%;
+            width: 55%;
+            border-radius: 10px;
+        }
+
+        .info {
+            color: white;
+            height: 10vh;
+        }
+
+        .info h3 {
+            text-align: left;
+            font-size: 28px;
+            height: 15vh;
+            /* margin-left: 80px; */
+        }
+
+        .info h3 span {
+            color: cyan;
+        }
+
+        .information div div {
+            height: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* width: 50%; */
+        }
+
+        .information div div p {
+            width: 100%;
+            font-weight: 600;
+        }
+
+        .information div div p span {
+
+            color: white;
+            /* margin-right: 10px; */
+            font-size: 28px;
+            margin-top: 10px;
+
+        }
+
+        /* .information div div p span::after{
         content: " -";
     } */
 
 
 
 
-    
-
-    .title2{
-        width: 99vw;
-        height:70vh;
-    }
-    .title2 div h1{
-        color: cyan;
-        text-align: center;
-        font-size:48px ;
-        height: 100%;
-        margin-bottom: 30px;
-    }
-    .title2 div h1 span{
-        color: white;
-    }
-    .title2 .education{
-        width:99vw;
-        height:60vh;
-        display: grid;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-    }
-
-    .education div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        justify-content: center;
-        /* margin-right: 15px; */
-    }
-    .education div div{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-        margin-bottom: 20px
-    }
-    .education div :first-child{
-        width: 39vw;
-        display: flex;
-        
-    }
-    .education div :first-child img{
-        width: 120px;
-        height: 120px;
-    }
-
-    .education div :last-child {
-        width: 59vw;    
-    }
-    education div :last-child h2{
-        color: cyan;  
-    }
 
 
+        .title2 {
+            width: 99vw;
+            height: 70vh;
+        }
 
-    .skill{
-        height: 50vh;
-        width: 99vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .title{
-        font-size: 28px;
-        color: cyan;
-        margin:20px 0px ;
-    }
-    .title h1 span i{
-        color: white;
-        font-size: 56px;
-        
-    }
-    .skills{
-        width: 90%;
-        height: 50vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        
-    }   
-    .skills img{
-        width: 150px;
-        height: 150px;
-        transition: all 1s;
-    }
+        .title2 div h1 {
+            color: cyan;
+            text-align: center;
+            font-size: 48px;
+            height: 100%;
+            margin-bottom: 30px;
+        }
 
-    .skills img:hover{
-        scale: 1.075;
-    }
+        .title2 div h1 span {
+            color: white;
+        }
 
-    .contactus{
-        width: 99vw;
-        height: 70vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .contacttitle{
-        height: 10vh;
-    }
-    .contacttitle h1{
-        color: cyan;
-        font-size: 48px;
-    }
-    .contacttitle h1 span i{
-        color: white;
-        margin-right: 10px;
-    }
+        .title2 .education {
+            width: 99vw;
+            height: 60vh;
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
 
-    .contactform{
-        margin-top: 50px;
-        width: 50%;
-        height:60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .contactform form{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-        background: linear-gradient(to right, #001f1f, cyan);
-        border-radius: 20px;
-    }
-    .contactform form input, .contactform form textarea{
-        width: 80%;
-        padding: 8px;
-        border-radius: 10px;
-        border: 2px solid cyan;
-        font-size: 14px;
-        font-weight: 600;
-        background-color: black;
-        color:cyan
-    }
+        .education div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            justify-content: center;
+            /* margin-right: 15px; */
+        }
 
-    .contactform form button{
-        width: 150px;
-        height: 40px;
-        border: none;
-        border-radius: 10px;
-        background-color: cyan;
-        font-weight: bold;
-        font-size: 16px;
-        cursor: pointer;
-        transition: all 0.5s;
-    }     
+        .education div div {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            margin-bottom: 20px
+        }
 
-        
+        .education div :first-child {
+            width: 39vw;
+            display: flex;
+
+        }
+
+        .education div :first-child img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .education div :last-child {
+            width: 59vw;
+        }
+
+        education div :last-child h2 {
+            color: cyan;
+        }
+
+
+
+        .skill {
+            height: 50vh;
+            width: 99vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 28px;
+            color: cyan;
+            margin: 20px 0px;
+        }
+
+        .title h1 span i {
+            color: white;
+            font-size: 56px;
+
+        }
+
+        .skills {
+            width: 90%;
+            height: 50vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .skills img {
+            width: 150px;
+            height: 150px;
+            transition: all 1s;
+        }
+
+        .skills img:hover {
+            scale: 1.075;
+        }
+
+        .contactus {
+            width: 99vw;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contacttitle {
+            height: 10vh;
+        }
+
+        .contacttitle h1 {
+            color: cyan;
+            font-size: 48px;
+        }
+
+        .contacttitle h1 span i {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .contactform {
+            margin-top: 50px;
+            width: 50%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contactform form {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            background: linear-gradient(to right, #001f1f, cyan);
+            border-radius: 20px;
+        }
+
+        .contactform form input,
+        .contactform form textarea {
+            width: 80%;
+            padding: 8px;
+            border-radius: 10px;
+            border: 2px solid cyan;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: black;
+            color: cyan
+        }
+
+        .contactform form button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: cyan;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+
     }
 
     @media (max-width:900px) {
-              .container{
-        background-color: black;
-        height: 50vh;
-        width: 99vw;
-        color: white;
-        display: flex;
-    }
-    .container .container1{
-        width: 50%;
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .container1 .content{
-    margin-left: 30px;
-    }
+        .container {
+            background-color: black;
+            height: 50vh;
+            width: 99vw;
+            color: white;
+            display: flex;
+        }
 
-    .container .container1 .content h1{
-        font-size:42px;
-    }
-    .container .container1 .content h2{
-        font-size: 24px;
-        color: cyan;
-    }
-    .content p{
-        font-size: 12px;
-        letter-spacing: 0.75px;
-        margin-top: 10px;
-        width:80%;
-        text-shadow: 0px 0px 3px 2px whitesmoke;
-    }
-    .icon{
-    
-        text-decoration: none;
-        display: flex;
-        height: 8vh;
-        
-    }
-    .icon div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        /* padding: 5px; */
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        font-size: 36px;
-        margin-top: 15px;
-        margin-right: 20px;
-        border: 2px solid cyan;
+        .container .container1 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-    }
-    .icon div a{
-    color: cyan;
-    margin-bottom: 4px;
+        }
 
-    }
+        .container1 .content {
+            margin-left: 30px;
+        }
 
-    .container2{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .container2 img{
-        height:400px;
-        width:250px;
-        z-index: 1;
-        position: relative;
-        left:100px;
-        top: -10px;
-    }
-    .container2 .blob{
-        height:330px;
-        width: 450px;
-        border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;
-        background-color: cyan;
-        z-index: 0;
-        position: relative;
-        right:120px;
-    
-    }
-    .container2 .blob:hover{
-        border-radius: 40% 55% 65% 60% / 40% 70% 65% 35%; 
-        transition: all 3s;
+        .container .container1 .content h1 {
+            font-size: 42px;
+        }
 
-    }
-    .btn{
-        text-align: left;
-        margin-top: 20px;
-    }
-    .btn button{
-        width: 120px;
-        height:40px;
-        padding: 2px;
-        border: none;
-        font-weight: bold;
-        border-radius: 10px;
-        margin-right: 20px;
-        transition: all 1s;
-    }
-    .btn .bt1{
-        background-color: cyan;
-    }
-    /* .btn .bt1:hover{
+        .container .container1 .content h2 {
+            font-size: 24px;
+            color: cyan;
+        }
+
+        .content p {
+            font-size: 12px;
+            letter-spacing: 0.75px;
+            margin-top: 10px;
+            width: 80%;
+            text-shadow: 0px 0px 3px 2px whitesmoke;
+        }
+
+        .icon {
+
+            text-decoration: none;
+            display: flex;
+            height: 8vh;
+
+        }
+
+        .icon div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            /* padding: 5px; */
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            font-size: 36px;
+            margin-top: 15px;
+            margin-right: 20px;
+            border: 2px solid cyan;
+
+        }
+
+        .icon div a {
+            color: cyan;
+            margin-bottom: 4px;
+
+        }
+
+        .container2 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container2 img {
+            height: 400px;
+            width: 250px;
+            z-index: 1;
+            position: relative;
+            left: 100px;
+            top: -10px;
+        }
+
+        .container2 .blob {
+            height: 330px;
+            width: 450px;
+            border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;
+            background-color: cyan;
+            z-index: 0;
+            position: relative;
+            right: 120px;
+
+        }
+
+        .container2 .blob:hover {
+            border-radius: 40% 55% 65% 60% / 40% 70% 65% 35%;
+            transition: all 3s;
+
+        }
+
+        .btn {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .btn button {
+            width: 120px;
+            height: 40px;
+            padding: 2px;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: all 1s;
+        }
+
+        .btn .bt1 {
+            background-color: cyan;
+        }
+
+        /* .btn .bt1:hover{
         scale: 1.02;
         box-shadow: 0 0 2px 1px cyan;
         font-size: 12px;
@@ -940,269 +1051,846 @@
         ;
     } */
 
-    /* this portion is for first 100vh which includes nav image blob button etc */
-    .title1{
-        width: 99vw;
-        height:15vh;
-    }
-    .title1 h1{
-        color: cyan;
-        text-align: center;
-        font-size:42px ;
-        height: 100%;
-    }
-    .title1 h1 span{
-        color: white;
-    }
-        .details :nth-child(2){
-        color: cyan;
-    }
+        /* this portion is for first 100vh which includes nav image blob button etc */
+        .title1 {
+            width: 99vw;
+            height: 15vh;
+        }
+
+        .title1 h1 {
+            color: cyan;
+            text-align: center;
+            font-size: 42px;
+            height: 100%;
+        }
+
+        .title1 h1 span {
+            color: white;
+        }
+
+        .details :nth-child(2) {
+            color: cyan;
+        }
 
 
-    .details{
-        width:99vw;
-        height:50vh;
-        display: flex;
+        .details {
+            width: 99vw;
+            height: 50vh;
+            display: flex;
 
-    }
-    .detail1{
-        width:39vw;
-        height:50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .detail2{
-        width:59vw;
-        height:50vh;
-        
-    }
-    .detail2 .information{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;;
-        font-size: 12px;
-        letter-spacing: 2px;
+        }
 
-    }
-    .detail1 img{
-        height: 65%;
-        width: 55%;
-        border-radius:10px;
-    }
+        .detail1 {
+            width: 39vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .info{
-        color: white;
-        height:10vh;
-    }
-    .info h3{
-        text-align: left;
-        font-size: 28px;
-        height: 15vh;
-        /* margin-left: 80px; */
-    }
-    .info h3 span{
-        color: cyan;
-    }
-    .information div div{
-        height: 20%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        /* width: 50%; */
-    }
-    .information div div p{
-        width: 100%;
-        font-weight: 600;
-    }
-    .information div div p span{
+        .detail2 {
+            width: 59vw;
+            height: 50vh;
 
-        color: white;
-        /* margin-right: 10px; */
-        font-size: 20px;
-        margin-top: 10px;
+        }
 
-    }
-    /* .information div div p span::after{
+        .detail2 .information {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            ;
+            font-size: 12px;
+            letter-spacing: 2px;
+
+        }
+
+        .detail1 img {
+            height: 65%;
+            width: 55%;
+            border-radius: 10px;
+        }
+
+        .info {
+            color: white;
+            height: 10vh;
+        }
+
+        .info h3 {
+            text-align: left;
+            font-size: 28px;
+            height: 15vh;
+            /* margin-left: 80px; */
+        }
+
+        .info h3 span {
+            color: cyan;
+        }
+
+        .information div div {
+            height: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* width: 50%; */
+        }
+
+        .information div div p {
+            width: 100%;
+            font-weight: 600;
+        }
+
+        .information div div p span {
+
+            color: white;
+            /* margin-right: 10px; */
+            font-size: 20px;
+            margin-top: 10px;
+
+        }
+
+        /* .information div div p span::after{
         content: " -";
     } */
 
 
 
 
-    
-
-    .title2{
-        width: 99vw;
-        height:50vh;
-    }
-    .title2 div h1{
-        color: cyan;
-        text-align: center;
-        font-size:42px ;
-        height: 100%;
-        margin-bottom: 30px;
-    }
-    .title2 div h1 span{
-        color: white;
-    }
-    .title2 .education{
-        width:99vw;
-        height:50vh;
-        display: grid;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-    }
-
-    .education div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        justify-content: center;
-        /* margin-right: 15px; */
-    }
-    .education div div{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-        margin-bottom: 10px
-         
-    }
-    .education div :first-child{
-        width: 39vw;
-        display: flex;
-        
-    }
-    .education div :first-child img{
-        width: 100px;
-        height: 100px;
-    }
-
-    .education div :last-child {
-        width: 59vw;    
-    }
-    education div :last-child h2{
-        color: cyan;  
-    }
 
 
+        .title2 {
+            width: 99vw;
+            height: 50vh;
+        }
 
-    .skill{
-        height: 50vh;
-        width: 99vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .title{
-        font-size: 28px;
-        color: cyan;
+        .title2 div h1 {
+            color: cyan;
+            text-align: center;
+            font-size: 42px;
+            height: 100%;
+            margin-bottom: 30px;
+        }
+
+        .title2 div h1 span {
+            color: white;
+        }
+
+        .title2 .education {
+            width: 99vw;
+            height: 50vh;
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+
+        .education div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            justify-content: center;
+            /* margin-right: 15px; */
+        }
+
+        .education div div {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            margin-bottom: 10px
+        }
+
+        .education div :first-child {
+            width: 39vw;
+            display: flex;
+
+        }
+
+        .education div :first-child img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .education div :last-child {
+            width: 59vw;
+        }
+
+        education div :last-child h2 {
+            color: cyan;
+        }
+
+
+
+        .skill {
+            height: 50vh;
+            width: 99vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 28px;
+            color: cyan;
             margin-top: 60px;
+        }
+
+        .title h1 span i {
+            color: white;
+            font-size: 36px;
+
+        }
+
+        .skills {
+            width: 90%;
+            height: 30vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .skills img {
+            width: 100px;
+            height: 100px;
+            transition: all 1s;
+        }
+
+        .skills img:hover {
+            scale: 1.075;
+        }
+
+        .contactus {
+            width: 99vw;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contacttitle {
+            height: 10vh;
+        }
+
+        .contacttitle h1 {
+            color: cyan;
+            font-size: 48px;
+        }
+
+        .contacttitle h1 span i {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .contactform {
+            margin-top: 50px;
+            width: 50%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contactform form {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            background: linear-gradient(to right, #001f1f, cyan);
+            border-radius: 20px;
+        }
+
+        .contactform form input,
+        .contactform form textarea {
+            width: 80%;
+            padding: 8px;
+            border-radius: 10px;
+            border: 2px solid cyan;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: black;
+            color: cyan
+        }
+
+        .contactform form button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: cyan;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+
     }
-    .title h1 span i{
-        color: white;
-        font-size: 36px;
+
+
+    @media (max-width:475px) {
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        header nav {
+            width: 100%;
+            height: 8vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 10px;
+
+        }
+
+        header nav .logo {
+            width: 30%;
+            color: white;
+            text-align: left;
+        }
+
+        header nav .logo a {
+            text-decoration: none;
+            color: cyan;
+            font-size: 12px;
+            font-weight: 600;
+            /* margin-left: 20px; */
+            /* text-shadow: 2px 2px 2px 5px; */
+
+
+        }
+
+        header nav .icons a {
+            position: relative;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+
+        }
+
+        header nav .icons a::after {
+            content: '';
+            height: 4px;
+            width: 0%;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            background-color: cyan;
+            transition: all 0.75s linear;
+            border-radius: 10px;
+
+
+        }
+
+        header nav .icons a:hover:after {
+            color: cyan;
+
+            width: 100%;
+        }
+
+        header nav .icons {
+            width: 50%;
+            display: none;
+            justify-content: space-evenly;
+        }
+
+        header nav .icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+        }
+
+        .container {
+            background-color: black;
+            height: 80vh;
+            width: 100vw;
+            color: white;
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+        .container .container1 {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container1 .content {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .container .container1 .content h1 {
+            font-size: 28px;
+        }
+
+        .container .container1 .content h2 {
+            font-size: 18px;
+            color: cyan;
+        }
+
+        .content p {
+            font-size: 12px;
+            letter-spacing: 0.75px;
+            margin-top: 10px;
+            width: 80%;
+            text-shadow: 0px 0px 3px 2px whitesmoke;
+        }
+
+        .icon {
+
+            text-decoration: none;
+            display: flex;
+            height: 8vh;
+
+        }
+
+        .icon div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            /* padding: 5px; */
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            font-size: 36px;
+            margin-top: 15px;
+            margin-right: 20px;
+            border: 2px solid cyan;
+
+        }
+
+        .icon div a {
+            color: cyan;
+            margin-bottom: 4px;
+
+        }
+
+        .container2 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container2 .image {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container2 img {
+            height: 320px;
+            width: 240px;
+            z-index: 1;
+            position: relative;
+            left: 60px;
+            top: -10px;
+        }
+
+        .container2 .blob {
+            height: 300px;
+            width: 300px;
+            border-radius: 60% 40% 35% 65% / 55% 60% 45% 40%;
+            background-color: cyan;
+            z-index: 0;
+            position: relative;
+            transition: all 1s ease;
+
+
+        }
+
+        .container2 .blob:hover {
+            border-radius: 40% 55% 65% 60% / 40% 70% 65% 35%;
+            transition: all 3s;
+
+        }
+
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .btn button {
+            width: 120px;
+            height: 30px;
+            padding: 2px;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: all 1s;
+        }
+
+        .btn .bt1 {
+            background-color: cyan;
+        }
+
+        /* .btn .bt1:hover{
+        scale: 1.02;
+        box-shadow: 0 0 2px 1px cyan;
+        font-size: 12px;
+        background-color: white;
+
+    .btn .bt2:hover{
+        /* scale: 1.02; */
+        /* box-shadow: 0 0 2px 1px white; 
+        font-size: 12px;
+        background-color: cyan
+        ;
+    } */
+
+        /* this portion is for first 100vh which includes nav image blob button etc */
+        .title1 {
+            width: 99vw;
+            height: 15vh;
+        }
+
+        .title1 h1 {
+            color: cyan;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+            height: 100%;
+        }
+
+        .title1 h1 span {
+            color: white;
+        }
+
+        .details :nth-child(2) {
+            color: cyan;
+        }
+
+
+        .details {
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+        .detail1 {
+            /* width: 39vw;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             */
+            
+        }
+
+        .detail2 {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .detail2 .information {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 16px;
+            letter-spacing: 2px;
+
+
+        }
+        .information .info1,.info2{
+            text-align: center;
+            margin:0 ;
+        }
+
+
+        .detail1 img {
+            /* height: 65%;
+            width: 55%;
+            border-radius: 10px; */
+            display: none;
+        }
+
+        .info {
+            color: white;
+            height: 15vh;
+        }
+
+        .info h3 {
+            text-align: center;
+            font-size: 18px;
+            height: 15vh;
+            /* margin-left: 80px; */
+        }
+
+        .info h3 span {
+            color: cyan;
+        }
+
+         .information div div {
+            
+            display: flex;
+            justify-content:center;
+            align-items: center; 
+             width: 100%; 
+             gap:10px;
+        } 
+
+        .information div div p {
+            width: 100%;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .information div div p span {
+
+            color: white;
+            /* margin-right: 10px; */
+            font-size: 16px;
+            
+
+        }
+
+        /* .information div div p span::after{
+        content: " -";
+    } */
+
+
+
+
+
+
+        .title2 {
+            width: 99vw;
+            height: 100vh;
+        }
+        .title2 .detail3{
         
-    }
-    .skills{
-        width: 90%;
-        height: 30vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+        }
+        .title2 div h1 {
+            color: cyan;
+            text-align: center;
+            font-size: 28px;
+            height: 100%;
+            width: 100%;
+
+            
         
-    }   
-    .skills img{
-        width: 100px;
-        height: 100px;
-        transition: all 1s;
+        }
+
+        .title2 div h1 span {
+            color: white;
+        }
+
+        .title2 .education {
+            width: 100%;
+            height: 80vh;
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+
+        .education div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            /* margin-right: 15px; */
+        }
+
+        .education div div {
+            width:100%;
+            text-align: center;
+            font-size: 16px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+            
+            
+        }
+
+        .education div :first-child {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .education div :first-child img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .education div :last-child {
+            width: 100%;
+        }
+
+        .education div :last-child h2 {
+            color: cyan;
+            width: 100%;
+            font-size: 18px;
+        }
+
+
+
+        .skill {
+            height: 100vh;
+            width: 99vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 18px;
+            color: cyan;
+            margin: 20px 0px;
+        }
+
+        .title h1 span i {
+            color: white;
+            font-size: 36px;
+
+        }
+
+        .skills {
+            width: 90%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        .skills img {
+            width: 80px;
+            height: 80px;
+            transition: all 1s;
+        }
+
+        .skills img:hover {
+            scale: 1.075;
+        }
+
+        .contactus {
+            width: 99vw;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contacttitle {
+            height: 10vh;
+        }
+
+        .contacttitle h1 {
+            color: cyan;
+            font-size: 18px;
+        }
+
+        .contacttitle h1 span i {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .contactform {
+            margin-top: 10px;
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        .contactform form {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            background: linear-gradient(to right, #001f1f, cyan);
+            border-radius: 20px;
+            
+        }
+
+        .contactform form input,
+        .contactform form textarea {
+            width: 80%;
+            padding: 8px;
+            border-radius: 10px;
+            border: 2px solid cyan;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: black;
+            color: cyan
+        }
+
+        .contactform form button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: cyan;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+
+
+
+
+
+
     }
-
-    .skills img:hover{
-        scale: 1.075;
-    }
-
-    .contactus{
-        width: 99vw;
-        height: 70vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .contacttitle{
-        height: 10vh;
-    }
-    .contacttitle h1{
-        color: cyan;
-        font-size: 48px;
-    }
-    .contacttitle h1 span i{
-        color: white;
-        margin-right: 10px;
-    }
-
-    .contactform{
-        margin-top: 50px;
-        width: 50%;
-        height:60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .contactform form{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-        background: linear-gradient(to right, #001f1f, cyan);
-        border-radius: 20px;
-    }
-    .contactform form input, .contactform form textarea{
-        width: 80%;
-        padding: 8px;
-        border-radius: 10px;
-        border: 2px solid cyan;
-        font-size: 14px;
-        font-weight: 600;
-        background-color: black;
-        color:cyan
-    }
-
-    .contactform form button{
-        width: 150px;
-        height: 40px;
-        border: none;
-        border-radius: 10px;
-        background-color: cyan;
-        font-weight: bold;
-        font-size: 16px;
-        cursor: pointer;
-        transition: all 0.5s;
-    }     
-
-
-
-
-
-
-        
-    }
-    @media only screen and (min-width:320px)and(max-width:475px) {
-
-
-
-
-
-        
-    }
-
-        
