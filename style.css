@@ -73,6 +73,7 @@
         width: 100%;
         color: white;
         display: flex;
+        overflow: hidden;
     }
     .container .container1{
         width: 50%;
@@ -135,6 +136,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+         animation: slideRightToCenter 0.8s ease-out forwards;
+    opacity: 0;
     }
     .container2 img{
         height:510px;
@@ -176,6 +179,11 @@
     .btn .bt1{
         background-color: cyan;
     }
+    .bt1 a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
     /* .btn .bt1:hover{
         scale: 1.02;
         box-shadow: 0 0 2px 1px cyan;
@@ -210,6 +218,7 @@
         width:99vw;
         height:100vh;
         display: flex;
+        overflow: hidden;
 
     }
     .detail1{
@@ -218,6 +227,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+         animation: slideLeftToCenter 0.8s ease-out forwards;
+    opacity: 0;
     }
     .detail2{
         width:60%;
@@ -232,7 +243,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;  
-        align-items: center;
+        align-items: left;
 
     }
     .detail1 img{
@@ -254,20 +265,29 @@
     .info h3 span{
         color: cyan;
     }
-    .information .info1{
-        height: 40%;
-        width: 85%;
-        background: linear-gradient(to top, #001f1f, cyan);
 
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
+    /* INFO 1 — slide from LEFT */
+.information .info1 {
+    width: 85%;
+    background: linear-gradient(to top, #001f1f, cyan);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Animation */
+    animation: slideRightToCenter 0.8s ease-out forwards;
+    opacity: 0;
+
+}
+        
         
 
-    }
+    
     .information .info1 h3{
         color: black;
         font-size: 28px;
@@ -280,17 +300,50 @@
         font-size: 18px;
         font-weight: 600;
     }
-    .information .info2{
-        height: 36%;
-        width: 60%;
-        background: linear-gradient(to bottom, #001f1f, cyan);
+    /* INFO 2 — slide from RIGHT */
+.information .info2 {
+    width: 60%;
+    background: linear-gradient(to left, #001f1f, cyan);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    animation: slideRightToCenter 0.8s ease-out forwards;
+
+}
+
+
+/* KEYFRAMES */
+@keyframes slideLeftToCenter {
+    from {
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRightToCenter {
+    from {
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+    .information .info2 h3{
         color: black;
-        padding: 20px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
+        font-size: 28px;
+        margin-bottom: 10px;
     }
     .information .info2 table{
         font-size: 20px;
@@ -354,13 +407,13 @@
         height: 200px;
          background: linear-gradient(to left, #001f1f, cyan);
         border-radius: 10px;
-        padding: 15px;
+        padding: 10px 20px;
         position: relative;
     }
     .education .card .year{
         position: relative;
         bottom: 30px;
-        left: 30px;
+        left: 25px;
         width:120px;
         background-color: cyan;
         text-align: center;
@@ -379,19 +432,14 @@
     }
 
      .card1,.card3,.card5{
-        animation-name:cards ;
-        position: absolute;
-        transition: all 2s;
+         animation: slideLeftToCenter 0.8s ease-out forwards;
+    opacity: 0;
      }
-
-     /* @keyframes cards {
-        from{
-            right:100px;
+        .card2,.card4,.card6{
+            animation: slideRightToCenter 0.8s ease-out forwards;
+    opacity: 0;
         }
-        to{
-            right:-100px;
-        } */
-
+     
         
      
 
